@@ -1,21 +1,28 @@
 # IHS Dashboard
-Requirements
-Docker
-Docker compose
 
 ## Environment
-Edit values as required in:
-```
-$ cp www/.env.example www/.env
+
+```bash
+# > Edit ports etc. in docker-compose.yml
+
+cp www/.env.example www/.env
+chmod 600 www/.env
+# > Edit www/.env
 ```
 
 ## Run server
-```
-$ docker-compose up -d
+
+```bash
+docker-compose up -d
+
+docker-compose run --rm --entrypoint=composer laravel install
+docker-compose run --rm --entrypoint=php laravel artisan migrate
 ```
 
 ## Check server
-All three services should be UP
-```
-$ docker-compose ps
+
+All three services should be UP:
+
+```bash
+docker-compose ps
 ```
