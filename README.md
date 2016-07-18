@@ -17,6 +17,7 @@ docker-compose up -d
 
 docker-compose run --rm --entrypoint=composer laravel install
 docker-compose run --rm --entrypoint=php laravel artisan migrate
+sudo chown -R $USER:$USER www/vendor/
 ```
 
 ## Check server
