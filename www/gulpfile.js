@@ -31,6 +31,7 @@ elixir(function(mix) {
 		bootstrap + 'collapse.js',
 		bootstrap + 'dropdown.js',
 		bootstrap + 'transition.js',
+		bootstrap + 'tab.js',
 
 		/* Extensions */
 		path + 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js',

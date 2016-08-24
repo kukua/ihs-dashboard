@@ -36,7 +36,26 @@
 				</div>
 				<div id='graphs' class='panel-collapse collapse' role='tabpanel' aria-labelledby='graphs'>
 					<div class="panel-body">
-						the graphs
+						<div>
+							<!-- Nav tabs -->
+						  	<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Temp</a></li>
+						    	<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Wind</a></li>
+						    	<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Gust</a></li>
+						    	<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Rain</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+						  	<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="home"><img src="/assets/images/chart.png" class="img-responsive"></div>
+						  	  	<div role="tabpanel" class="tab-pane" id="profile"><img src="/assets/images/chart.png" class="img-responsive"></div>
+						  	  	<div role="tabpanel" class="tab-pane" id="messages"><img src="/assets/images/chart.png" class="img-responsive"></div>
+						  	  	<div role="tabpanel" class="tab-pane" id="settings"><img src="/assets/images/chart.png" class="img-responsive"></div>
+						  	</div>
+
+						</div>
+
+
 					</div>
 				</div>
 			</div>
