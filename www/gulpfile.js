@@ -11,15 +11,15 @@ var elixir = require('laravel-elixir');
  |
  */
 
-var path = '../../../node_modules/';
+var path = './node_modules/';
 var bootstrap = path + 'bootstrap/js/';
 
 elixir(function(mix) {
 
-	mix.less([
-		'main.less'
-	],
-	'public/assets/main.min.css')
+	mix.less(
+        ['main.less'],
+	    'public/assets/main.min.css'
+    )
 
 	mix.scripts([
 		/* Basic */
@@ -34,7 +34,6 @@ elixir(function(mix) {
 
 		/* Extensions */
 		path + 'bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
-		path + 'leaflet/dist/leaflet-src.js',
 
 		/* Custom scripts */
 		'script.js',

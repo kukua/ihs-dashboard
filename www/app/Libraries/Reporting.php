@@ -4,7 +4,7 @@
  * @copyright	2016 Kukua B.V.
  * @license		MIT License
  */
-namespace App\Library;
+namespace App\Libraries;
 
 use DB;
 

@@ -9,7 +9,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use App\Http\Requests;
-use App\Library\Reporting;
+use App\Libraries\Reporting;
 use DateTime;
 
 /**

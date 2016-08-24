@@ -2,15 +2,16 @@
 
 @section('content')
 	<div id="map"></div>
+
 	<div id="sidebar">
-		<h2>Station name</h2>
+		<h3 class='js-station-name'>&nbsp;</h3>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">Current weather</h3>
 			</div>
 			<div class="panel-body">
-				<h1>20°C</h1>
-				Cloudy, and low wind speeds.
+				<h1 class='js-station-current-temp'>&nbsp;</h1>
+				<p class='js-station-current-weather'>&nbsp;</p>
 			</div>
 		</div>
 		<div class="panel panel-default">
