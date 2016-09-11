@@ -31,6 +31,6 @@
 
 	<script>var config = <?= json_encode(array_only($_ENV, ['LEAFLET_ID', 'LEAFLET_ACCESS_TOKEN'])) ?></script>
 	<script src="/assets/main.min.js"></script>
-	<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
 </body>
 </html>
