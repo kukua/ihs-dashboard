@@ -9,9 +9,10 @@
     "laravel-elixir": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.0.0",
-    "moment": "^2.14.1",
     "bootstrap": "^3.0.0",
-    "bootstrap-datepicker": "^1.6.1"
+    "bootstrap-datepicker": "^1.6.1",
+    "jquery": "^3.0.0",
+    "leaflet": "^0.7.7",
+    "moment": "^2.14.1"
   }
 }

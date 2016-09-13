@@ -19,8 +19,10 @@ docker-compose up -d
 
 docker-compose run --rm --entrypoint=composer laravel install
 docker-compose run --rm --entrypoint=php laravel artisan key:generate
-docker-compose run --rm --entrypoint=php laravel artisan migrate
 sudo chown -R $USER:$USER www/vendor/
+cd www/
+npm install
+gulp # or ./node_modules/.bin/gulp
 ```
 
 ## Check server
