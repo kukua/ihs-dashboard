@@ -29,8 +29,15 @@
 
 	@yield('content')
 
-	<script>var config = <?= json_encode(array_only($_ENV, ['LEAFLET_ID', 'LEAFLET_ACCESS_TOKEN'])) ?></script>
-	<script src="/assets/main.min.js"></script>
+	<script>var config = <?= json_encode(array_only($_ENV, [
+		'CONCAVA_API_URL',
+		'CONCAVA_API_TOKEN',
+		'LEAFLET_ID',
+		'LEAFLET_ACCESS_TOKEN',
+	])) ?></script>
 	<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="/assets/main.min.js"></script>
 </body>
 </html>

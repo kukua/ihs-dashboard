@@ -12,6 +12,7 @@
 				</div>
 				<div id='currentWeather' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='currentWeather'>
 					<div class="panel-body">
+						<h3>Temp: <span class='js-station-current-temp'></span> °C</h3>
 						<h3>Wind: <span class='js-station-current-wind'></span> km/h</h3>
 						<h3>Gusts: <span class='js-station-current-gust'></span> km/h</h3>
 						<p class='js-station-current-weather'>&nbsp;</p>
@@ -59,6 +60,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<button id="fetch-btn" class="btn btn-primary">Fetch live data</button>
+				</div>
 		</div>
 	</div>
 @endsection

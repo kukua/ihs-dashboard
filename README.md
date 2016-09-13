@@ -23,6 +23,9 @@ sudo chown -R $USER:$USER www/vendor/
 cd www/
 npm install
 gulp # or ./node_modules/.bin/gulp
+
+# Development
+gulp watch
 ```
 
 ## Check server
