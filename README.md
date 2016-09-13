@@ -8,6 +8,8 @@
 cp www/.env.example www/.env
 chmod 600 www/.env
 # > Edit www/.env
+
+touch www/storage/logs/laravel.log
 ```
 
 ## Run server
@@ -16,6 +18,7 @@ chmod 600 www/.env
 docker-compose up -d
 
 docker-compose run --rm --entrypoint=composer laravel install
+docker-compose run --rm --entrypoint=php laravel artisan key:generate
 docker-compose run --rm --entrypoint=php laravel artisan migrate
 sudo chown -R $USER:$USER www/vendor/
 ```
