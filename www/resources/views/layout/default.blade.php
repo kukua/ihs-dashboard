@@ -35,7 +35,7 @@
 		'LEAFLET_ID',
 		'LEAFLET_ACCESS_TOKEN',
 	])) ?></script>
-	<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="/assets/main.min.js"></script>
