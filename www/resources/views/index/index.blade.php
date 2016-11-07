@@ -3,6 +3,14 @@
 @section('content')
 	<div id="map"></div>
 
+	<div id="tooltip">
+		<p>
+			At first, this map shows demo data. The colored markers shows which stations have high wind speeds in a glimpse.<br />
+			Click the button below to load real data and reset the markers.
+		</p>
+		<button id="fetch-btn" class="btn btn-primary btn-block">Fetch live data</button>
+	</div>
+
 	<div id="sidebar">
 		<h3 class='js-station-name'>--</h3>
 		<div class="panel-group" id="accordion" role="tablist" area-multiselectable="true">
@@ -53,17 +61,10 @@
 						  	  	<div role="tabpanel" class="tab-pane" id="messages"><img src="/assets/images/chart.png" class="img-responsive"></div>
 						  	  	<div role="tabpanel" class="tab-pane" id="settings"><img src="/assets/images/chart.png" class="img-responsive"></div>
 						  	</div>
-
 						</div>
-
-
 					</div>
 				</div>
 			</div>
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<button id="fetch-btn" class="btn btn-primary">Fetch live data</button>
-				</div>
 		</div>
 	</div>
 @endsection
