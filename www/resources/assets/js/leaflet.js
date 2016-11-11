@@ -95,7 +95,8 @@
 
 			if (mark.wind > 30 || mark.gust > 30) {
 				iconurl = dangerMarker
-			} else if (mark.wind > 20 || mark.gust > 20) {
+			} else if (mark.wind > 20 || mark.gust > 20 ||
+				typeof mark.wind !== 'number' || typeof mark.gust !== 'number') {
 				iconurl = warningMarker
 			} else {
 				iconurl = defaultMarker
@@ -173,9 +174,9 @@
 					name: device.name,
 					lat: lat.value,
 					lng: lng.value,
-					temp: meas.temp,
-					wind: meas.windSpeed,
-					gust: meas.gustSpeed,
+					temp: (meas.temp < 3000      ? meas.temp : 'N/A'),
+					wind: (meas.windSpeed < 3000 ? meas.windSpeed : 'N/A'),
+					gust: (meas.gustSpeed < 3000 ? meas.gustSpeed : 'N/A'),
 					weather: '',
 				})
 			})
